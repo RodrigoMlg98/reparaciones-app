@@ -15,29 +15,7 @@
 
 
     <style>
-        .owl-carousel .item,
-        .owl-carousel-center .item {
-            height: 10rem;
-            padding: 1rem;
-        }
-        
-        .owl-carousel .item {
-            background: #4DC7A0;
-        }
-        
-        .owl-carousel-center .item {
-            .center {
-                opacity: 1;
-            }
-            text-align: right;
-            background: #23abcc;
-            opacity: .4;
-        }
-        
-        .owl-carousel-single .item {
-            background: #a37c5a;
-            text-align: center;
-        }
+
     </style>
 
 
@@ -45,12 +23,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-
-
-
-
 </head>
 
 <body>
@@ -58,9 +30,51 @@
 
 </body>
 
-
-
 </html>
+
+<script>
+    $(document).ready(function() {
+        $(".trabajos ").owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 3000,
+            margin: 10,
+            loop: true,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $(".marcas ").owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 1000,
+            margin: 10,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+
 <script>
     function count() {
         var counter = {
@@ -83,65 +97,4 @@
     }
 
     count();
-</script>
-<script>
-    $(document).ready(function() {
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            items: 1,
-            center: true,
-            lazyLoad: true,
-            dots: false
-        });
-    });
-</script>
-
-<script>
-    $(document).ready(function() {
-        $('.owl-carousel-basic').owlCarousel({
-            margin: 0,
-            loop: true, // 數量不夠時，可以取用到第一個
-            autoplay: true, // 是否，自動播放（一張一張，非一個group）
-            item: 3,
-            autoplayTimeout: 3000, // 自動播放間隔
-            autoplayHoverPause: true, // 是否，滑鼠移入就暫停
-            nav: true, // 是否，顯示< >圖標
-            responsive: { // 依據不同的breakpoints，呈現數量
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2,
-                    nav: false,
-                    margin: 50
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-
-        $('.owl-carousel-center').owlCarousel({
-            autoplay: true,
-            center: true, // true，下面的點點＝總數量
-            margin: 15,
-            autoplayTimeout: 2000,
-            loop: true, // 數量不夠時，可以取用到第一個
-            nav: false, // 是否，顯示< >圖標
-            items: 1, // 只出現2個
-        })
-
-        $('.owl-carousel-single').owlCarousel({
-            margin: 0,
-            autoplay: true, // 是否，自動播放（一張一張，非一個group）
-            autoplayTimeout: 1500, // 自動播放間隔
-            autoplayHoverPause: false, // 是否，滑鼠移入就暫停
-            animateOut: 'fadeOut',
-            // animateIn: 'fadeIn',
-            loop: true, // 數量不夠時，可以取用到第一個
-            nav: false, // 是否，顯示< >圖標
-            items: 1, // 只出現2個
-
-        })
-    });
 </script>
