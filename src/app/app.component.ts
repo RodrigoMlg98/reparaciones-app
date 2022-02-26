@@ -6,8 +6,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent   {
   title = 'reparaciones-app';
+
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -32,5 +33,20 @@ export class AppComponent {
     },
     nav: true
   }
+
+    slides = [
+      {id: 1, img: "https://dummyimage.com/350x150/423b42/fff"},
+      {id: 2, img: "https://dummyimage.com/350x150/2a2b7a/fff"},
+      {id: 3, img: "https://dummyimage.com/350x150/1a2b7a/fff"},
+      {id: 4, img: "https://dummyimage.com/350x150/7a2b7a/fff"},
+      {id: 5, img: "https://dummyimage.com/350x150/9a2b7a/fff"},
+      {id: 6, img: "https://dummyimage.com/350x150/5a2b7a/fff"},
+      {id: 6, img: "https://dummyimage.com/350x150/4a2b7a/fff"}
+    ];
 }
+
+
+
+
+
 
