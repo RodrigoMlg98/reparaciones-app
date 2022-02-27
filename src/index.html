@@ -12,21 +12,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-
+        .whatsapp {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }
+        
+        .whatsapp-icon {
+            margin-top: 13px;
+        }
     </style>
-
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.cookie/1.1/jquery.cookie.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 </head>
 
 <body>
+    <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <app-root></app-root>
 
 </body>
@@ -34,12 +51,12 @@
 </html>
 
 <script>
-    /*     $(document).ready(function() {
-            $('#exampleModal').modal('show'); */
-    /*         if ($.cookie('pop') == null) {
-                $('#exampleModal').modal('show');
-                $.cookie('pop', '7');
-            } */
+    $(document).ready(function() {
+        $('#exampleModal').modal('show');
+        /*         if ($.cookie('pop') == null) {
+                    $('#exampleModal').modal('show');
+                    $.cookie('pop', '7');
+                } */
     });
 </script>
 
