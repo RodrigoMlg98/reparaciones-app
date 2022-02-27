@@ -26,3 +26,12 @@
     background-position: center center;
     background-attachment: fixed;
 }
+
+.carousel-caption {
+    top: 40%;
+    bottom: auto;
+}
+
+.just {
+    text-align: justify;
+}
