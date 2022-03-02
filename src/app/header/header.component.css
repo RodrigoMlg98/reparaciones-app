@@ -1,19 +1,33 @@
-.header {
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
+#navbar {
+    overflow: hidden;
+    padding: 35px 5px;
+    transition: 0.4s;
     position: fixed;
+    width: 100%;
     top: 0;
-    width: 100%
+    z-index: 99;
 }
 
-.sticky+.content {
-    padding-top: 102px;
+#navbar #logo {
+    width: 400px;
+    transition: 0.4s;
+}
+
+#text {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 580px) {
+    #navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #navbar-right {
+        float: none;
+    }
+    #navbar #logo {
+        width: 100px;
+        transition: 0.4s;
+    }
 }
