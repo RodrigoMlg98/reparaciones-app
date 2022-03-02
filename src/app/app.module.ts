@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 const appRoutes:Routes=[
   {path:'', component:HomeComponentComponent},
   {path: 'servicios', component:ServiciosComponentComponent},
+  {path: 'servicios', component:ServiciosComponentComponent},
 /*   {path: 'servicios', component:HomeComponentComponent} */
 ];
 
