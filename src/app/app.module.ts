@@ -9,12 +9,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiciosComponentComponent } from './servicios-component/servicios-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ServicioComponentComponent } from './servicio-component/servicio-component.component';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponentComponent},
   {path: 'servicios', component:ServiciosComponentComponent},
-  {path: 'servicios', component:ServiciosComponentComponent},
-/*   {path: 'servicios', component:HomeComponentComponent} */
+{path: 'servicio/:id', component:ServicioComponentComponent}
 ];
 
 
@@ -26,6 +26,7 @@ const appRoutes:Routes=[
     footerComponet,
     ServiciosComponentComponent,
     HomeComponentComponent,
+    ServicioComponentComponent,
   
   ],
   imports: [
