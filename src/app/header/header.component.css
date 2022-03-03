@@ -10,11 +10,15 @@
 
 #navbar #logo {
     width: 400px;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 #text {
     font-size: 35px;
+}
+
+#navbar-right {
+    float: right;
 }
 
 @media screen and (max-width: 580px) {
