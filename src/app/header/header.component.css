@@ -13,6 +13,16 @@
     transition: 1s;
 }
 
+#navbar #bi-telephone {
+    width: 50px;
+    transition: 1s;
+}
+
+#navbar #telefono {
+    font-size: 1em;
+    transition: 1s;
+}
+
 #text {
     font-size: 35px;
 }

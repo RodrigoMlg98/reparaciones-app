@@ -56,11 +56,11 @@
 
 <script>
     /*     $(document).ready(function() {
-                                                                                                                                                                                                                                                                                                                                                                    if ($.cookie('pop') == null) {
-                                                                                                                                                                                                                                                                                                                                                                        $('#exampleModal').modal('show');
-                                                                                                                                                                                                                                                                                                                                                                        $.cookie('pop', '7');
-                                                                                                                                                                                                                                                                                                                                                                    }
-                                                                                                                                                                                                                                                                                                                                                                }); */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                if ($.cookie('pop') == null) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    $('#exampleModal').modal('show');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    $.cookie('pop', '7');
+                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                                                                                            }); */
 
     /*     $(document).ready(function() {
             $('#exampleModal').modal('show');
@@ -74,12 +74,17 @@
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("navbar").style.padding = "30px 10px";
             document.getElementById("logo").style.width = "250px";
+            document.getElementById("bi-telephone").style.width = "35px";
+            document.getElementById("telefono").style.fontSize = ".5em";
+
         } else {
             document.getElementById("navbar").style.padding = "35px 5px";
             document.getElementById("logo").style.width = "500px";
+            document.getElementById("bi-telephone").style.width = "50px";
+            document.getElementById("telefono").style.fontSize = "1em";
         }
     }
 </script>
