@@ -13,16 +13,16 @@
     --font1: 'Heebo', sans-serif;
     --font2: 'Fira Sans Extra Condensed', sans-serif;
     --font3: 'Roboto', sans-serif;
-    --btnbg: #ffcc00;
+    --btnbg: #e30613;
     --btnfontcolor: rgb(61, 61, 61);
     --btnfontcolorhover: rgb(255, 255, 255);
-    --btnbghover: #ffc116;
-    --btnactivefs: rgb(241, 195, 46);
+    --btnbghover: #e30613;
+    --btnactivefs: #e30613;
     --label-index: #960796;
     --danger-index: #5bc257;
     --link-color: #000;
     --link-color-hover: #fff;
-    --bg-content-color: #ffcc00;
+    --bg-content-color: #e30613;
 }
 
 .container-fluid {
@@ -172,4 +172,12 @@
 
 .fa-chevron-circle-right:before {
     color: darkgray;
+}
+
+.bglog {
+    background-color: #e30613;
+}
+
+.bgloga {
+    background-color: #1270b7;
 }
