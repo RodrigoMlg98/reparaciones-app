@@ -25,6 +25,8 @@
 
 #text {
     font-size: 35px;
+    font-family: Helvetica;
+    transform: skew(-20deg);
 }
 
 #navbar-right {

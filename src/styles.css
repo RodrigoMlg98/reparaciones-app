@@ -1,4 +1,4 @@
 @font-face {
-    font-family: type;
-    src: url(helvetica-normal.ttf);
+    font-family: 'Helvetica';
+    src: local('Helvetica'), url(assets/fuente/Helvetica-Neue-Bold_22498.ttf) format('woff');
 }
