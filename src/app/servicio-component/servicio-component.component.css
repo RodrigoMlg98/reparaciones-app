@@ -17,3 +17,8 @@
 .colorcent {
     color: #e30613;
 }
+
+#text {
+    font-size: 35px;
+    font-family: Helvetica;
+}
