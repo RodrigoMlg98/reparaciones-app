@@ -1,27 +1,57 @@
-<div class="container">
-    <div class="heading-section">
-        <h1 id="text" class="display-1 colorserv text-center mt-3">Servicio para tu {{servicio}}</h1>
-    </div>
-</div>
-<section id="bienvenidos" class="my-5">
+<main *ngIf="servicio == 'calentador'">
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="video-contenido position-relative d-inline-block text-truncate">
-                    <img src="assets/servicios/calentador.png" class="img-fluid " alt="Fondo imagen del video">
-                    <a href="http://www.youtu.be/38evH9laHmY" class="venobox-video" data-vbtype="video"><i class="fas fa-play"></i></a>
+        <div class="heading-section">
+            <h1 id="titulo" class="display-1 colorserv text-center mt-3">Servicio para tu {{servicio}}</h1>
+        </div>
+    </div>
+    <section id="bienvenidos" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="video-contenido position-relative d-inline-block text-truncate">
+                        <img src="assets/servicios/calentador.png" class="img-fluid " alt="Fondo imagen del video">
+                        <a href="http://www.youtu.be/38evH9laHmY" class="venobox-video" data-vbtype="video"><i class="fas fa-play"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 pt-4 text-center">
+                    <h2 id="text" class="display-5 font-weight-bold ">TÉCNICOS ESPECIALIZADOS <span class="colorcent">PARA TU CALENTADOR.</span></h2>
+                    <h6 id="text" class="text-black-50 display-6">NO TE ARRIESGUES Y CONTACTANOS</h6>
+                    <h1 class="just">Un mantenimiento correctivo se realiza cuando uno o más de los componentes del calentador se encuentran en mal estado, cuando presenta algunas fallas de combustión, calentamiento, se percibe olor a gas mal quemado, variación de temperatura,
+                        entre otros.</h1>
+
+                    <a href="#" class="btn bglog text-white">CONTACTANOS</a>
                 </div>
 
             </div>
-            <div class="col-12 col-md-6 pt-4 text-center">
-                <h2 id="text" class="display-5 font-weight-bold ">TECNICOS ESPECIALIZADOS <span class="colorcent">PARA TU CALENTADOR.</span></h2>
-                <h6 id="text" class="text-black-50 display-6">NO TE ARRIESGUES Y CONTACTANOS</h6>
-                <h1 class="just">Un mantenimiento correctivo se realiza cuando uno o más de los componentes del calentador se encuentran en mal estado, cuando presenta algunas fallas de combustión, calentamiento, se percibe olor a gas mal quemado, variación de temperatura,
-                    entre otros.</h1>
+        </div>
+    </section>
+</main>
 
-                <a href="#" class="btn bgloga text-white">CONTACTANOS</a>
-            </div>
-
+<main *ngIf="servicio == 'caldera'">
+    <div class="container">
+        <div class="heading-section">
+            <h1 id="titulo" class="display-1 colorserv text-center mt-3">Servicio para tu {{servicio}}</h1>
         </div>
     </div>
-</section>
+    <section id="bienvenidos" class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="video-contenido position-relative d-inline-block text-truncate">
+                        <!--  <img src="assets/servicios/calentador.png" class="img-fluid " alt="Fondo imagen del video"> -->
+                        <a href="http://www.youtu.be/38evH9laHmY" class="venobox-video" data-vbtype="video"><i class="fas fa-play"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pt-4 text-center">
+                    <!--                     <h2 id="text" class="display-5 font-weight-bold ">TÉCNICOS ESPECIALIZADOS <span class="colorcent">PARA TU CALENTADOR.</span></h2>
+                    <h6 id="text" class="text-black-50 display-6">NO TE ARRIESGUES Y CONTACTANOS</h6>
+                    <h1 class="just">Un mantenimiento correctivo se realiza cuando uno o más de los componentes del calentador se encuentran en mal estado, cuando presenta algunas fallas de combustión, calentamiento, se percibe olor a gas mal quemado, variación de temperatura,
+                        entre otros.</h1> -->
+
+                    <a href="#" class="btn bglog text-white">CONTACTANOS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
