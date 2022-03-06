@@ -181,3 +181,13 @@
 .bgloga {
     background-color: #1270b7;
 }
+
+.bglogas {
+    color: #1270b7;
+}
+
+#text {
+    font-size: 35px;
+    font-family: Helvetica;
+    transform: skew(-20deg);
+}
