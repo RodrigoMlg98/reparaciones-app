@@ -5,11 +5,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponet } from './/header/header.componet';
 import { footerComponet } from './footer/footer.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiciosComponentComponent } from './servicios-component/servicios-component.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ServicioComponentComponent } from './servicio-component/servicio-component.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes:Routes=[
   {path:'', component:HomeComponentComponent},
