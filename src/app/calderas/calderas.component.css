@@ -1,0 +1,29 @@
+.colorserv {
+    color: #1270b7;
+}
+
+.bglog {
+    background-color: #e30613;
+}
+
+.bgloga {
+    background-color: #1270b7;
+}
+
+.just {
+    text-align: justify;
+}
+
+.colorcent {
+    color: #e30613;
+}
+
+#text {
+    font-size: 35px;
+    font-family: Helvetica;
+}
+
+#titulo {
+    font-size: 50px;
+    font-family: Helvetica;
+}

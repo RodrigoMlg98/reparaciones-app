@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import {ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-servicio-component',
   templateUrl: './servicio-component.component.html',
   styleUrls: ['./servicio-component.component.css']
 })
-export class ServicioComponentComponent implements OnInit {
+export class ServicioComponentComponent {
   title = 'Servicio';
 
 /*   constructor(
@@ -14,12 +14,23 @@ export class ServicioComponentComponent implements OnInit {
   ) {} */
 
   servicio: string;
+
+  calentador: boolean = false;
+
+  
+
   constructor(private actRoute: ActivatedRoute) {
     this.servicio = this.actRoute.snapshot.params['id'];
   }
 
-  ngOnInit() {
 
+
+  ngOnInit() {
+    if (this.servicio == 'calentador') {
+
+      this.calentador = true;
+    
+    }
   }
 
 }
