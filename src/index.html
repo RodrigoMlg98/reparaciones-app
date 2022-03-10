@@ -68,9 +68,9 @@
 
 <script>
     /*     $(document).ready(function() {
-                                                                                                                                                                /*     $(document).ready(function() {
-                                                                                                                                                                        $('#exampleModal').modal('show');
-                                                                                                                                                                    }); */
+                                                                                                                                                                                                                                    /*     $(document).ready(function() {
+                                                                                                                                                                                                                                            $('#exampleModal').modal('show');
+                                                                                                                                                                                                                                        }); */
 </script>
 
 <script>
@@ -80,17 +80,24 @@
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.getElementById("navbar").style.padding = "30px 10px";
+        if (document.body.scrollTop > 9 || document.documentElement.scrollTop > 9) {
+            /*   document.getElementById("navbar").style.padding = "20px 10px"; */
             document.getElementById("logo").style.width = "250px";
             document.getElementById("bi-telephone").style.width = "35px";
             document.getElementById("telefono").style.fontSize = ".5em";
+            document.getElementById("text-navi").style.fontSize = "1em";
+            document.getElementById("text-navs").style.fontSize = "1em";
+            document.getElementById("text-navv").style.fontSize = "1em";
 
         } else {
-            document.getElementById("navbar").style.padding = "35px 5px";
-            document.getElementById("logo").style.width = "500px";
+            /*  document.getElementById("navbar").style.padding = "35px 5px"; */
+            document.getElementById("logo").style.width = "350px";
             document.getElementById("bi-telephone").style.width = "50px";
             document.getElementById("telefono").style.fontSize = "1em";
+            document.getElementById("text-navi").style.fontSize = "2em";
+            document.getElementById("text-navs").style.fontSize = "2em";
+            document.getElementById("text-navv").style.fontSize = "2em";
+
         }
     }
 </script>
