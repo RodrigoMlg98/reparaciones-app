@@ -5,6 +5,13 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { ServicioComponentComponent } from './servicio-component/servicio-component.component';
 import { AppComponent } from './app.component';
 import { CalderasComponent } from './calderas/calderas.component';
+import { HidroneumaticoComponent } from './hidroneumatico/hidroneumatico.component';
+import { JacuzziComponent } from './jacuzzi/jacuzzi.component';
+import { VaporComponent } from './vapor/vapor.component';
+import { BombaguaComponent } from './bombagua/bombagua.component';
+
+
+
 
 
 const routes: Routes = [
@@ -12,7 +19,20 @@ const routes: Routes = [
   {path:'home', component:HomeComponentComponent},
   {path: 'servicios', component:ServiciosComponentComponent},
   {path: 'servicio/:id', component:ServicioComponentComponent}, 
-  {path: 'servicios/calderas', component:CalderasComponent}
+  {path: 'servicios/calderas', component:CalderasComponent},
+  {path: 'servicios/hidroneumatico', component:HidroneumaticoComponent},
+  {path: 'servicios/jacuzzi', component:JacuzziComponent},
+  {path: 'servicios/vapor', component:VaporComponent},
+  {path: 'servicios/bombagua', component:BombaguaComponent},
+
+
+
+
+
+
+
+
+
 
 ];
 @NgModule({
@@ -21,7 +41,12 @@ declarations: [
     ServiciosComponentComponent,
     HomeComponentComponent,
     ServicioComponentComponent,
-    CalderasComponent
+    CalderasComponent,
+    HidroneumaticoComponent,
+    JacuzziComponent,
+    VaporComponent,
+    BombaguaComponent
+    
                 ],
 /*   imports: [BrowserModule, AppRoutingModule,RouterModule.forRoot(routes)], */
 imports: [RouterModule.forRoot(routes)],

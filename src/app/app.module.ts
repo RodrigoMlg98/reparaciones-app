@@ -14,10 +14,13 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 
 
+
 @NgModule({
   declarations: [AppComponent,
     HeaderComponet,
     footerComponet,
+    
+    
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
