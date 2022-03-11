@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <!--     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
 
@@ -41,12 +42,55 @@
             /*             padding: 10px; */
         }
     </style>
+    <style>
+        .whatsappcel {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+        }
+        
+        .whatsapp-icon {
+            margin-top: 13px;
+        }
+    </style>
 </head>
 
+
 <body>
-    <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsapp" target="_blank"> <i class="mx-auto fa fa-whatsapp whatsapp-icon"></i></a>
+
+
+
+
+
+
+    <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsapp  d-none d-sm-block" target="_blank"> <i class="mx-auto fa fa-whatsapp whatsapp-icon"></i></a>
+    <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsappcel  d-sm-none d-flex" target="_blank"> <i class="mx-auto fa fa-whatsapp whatsapp-icon"></i></a>
+
+
     <app-root></app-root>
 </body>
+<div class="red">
+    <div id="facebook">
+        <a href="#" class="fab fa-facebook-f"></a>
+    </div>
+    <div id="youtube">
+        <a href="#" class="fab fa-youtube"></a>
+    </div>
+    <div id="twitter">
+        <a href="#" class="fab fa-twitter"></a>
+    </div>
+    <div id="correo">
+        <a href="#" class="fas fa-envelope-square"></a>
+    </div>
+</div>
 
 </html>
 
@@ -58,7 +102,7 @@
 <script src="https://cdn.jsdelivr.net/jquery.cookie/1.1/jquery.cookie.js"></script>
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+<script src="https://use.fontawesome.com/02f5a599c4.js"></script>
 
 <script>
     AOS.init({
@@ -68,9 +112,9 @@
 
 <script>
     /*     $(document).ready(function() {
-                                                                                                                                                                                                                                    /*     $(document).ready(function() {
-                                                                                                                                                                                                                                            $('#exampleModal').modal('show');
-                                                                                                                                                                                                                                        }); */
+                                                                                                                                                                                                                                                                                                                                                                                                                                    /*     $(document).ready(function() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                            $('#exampleModal').modal('show');
+                                                                                                                                                                                                                                                                                                                                                                                                                                        }); */
 </script>
 
 <script>
