@@ -45,7 +45,7 @@
 }
 
 #correo a {
-    background: #d1d413;
+    background: black;
     padding: 10px 20px;
     color: #000;
     text-decoration: none;
@@ -58,4 +58,8 @@
     background: #000;
     color: #fff;
     padding: 10px 50px;
+}
+
+#tiktok {
+    background-color: #fff;
 }
