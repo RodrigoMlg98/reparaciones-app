@@ -43,33 +43,33 @@
     </div>
     <div class="container">
         <div class="row">
-            <div data-aos="fade-up" class="col-sm-12 col-lg-6">
-                <h2> REPARACIÓN Y MANTENIMIENTO </h2>
-                <h3> Somos una empresa mexicana con más de 30 AÑOS posicionados en el mercado, especializados en la reparación y mantenimiento de calentadores, calderas, equipos para albercas, calefacciones centrales e hidrónicas, calefactores, sistemas de
+            <div data-aos="fade-up" class="col-sm-12 col-lg-6" [class.animate_parrafoL]="animate_title">
+                <h2 [class.fadepl]="fade"> REPARACIÓN Y MANTENIMIENTO </h2>
+                <h3 [class.fadepl]="fade"> Somos una empresa mexicana con más de 30 AÑOS posicionados en el mercado, especializados en la reparación y mantenimiento de calentadores, calderas, equipos para albercas, calefacciones centrales e hidrónicas, calefactores, sistemas de
                     recirculación para agua, hidroneumáticos, entre otros. Recurre a los EXPERTOS. </h3><br>
                 <div class="col d-flex justify-content-center mb-4"><img src="assets/logo_reparacion_total.png" width="150-" height="60" alt="reparacion-total"> </div>
             </div>
-            <div class="col-sm-12 col-lg-6">
-                <h2> OFRECEMOS </h2>
-                <h3>
+            <div class="col-sm-12 col-lg-6" [class.animate_parrafoR]="animate_title">
+                <h2 [class.fadepr]="fade"> OFRECEMOS </h2>
+                <h3 [class.fadepr]="fade">
                     <li>Reparaciones el mismo día</li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> Todas las marcas y modelos </li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> 30 años de experiencia nos respaldan </li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> Seguimiento de servicio anual </li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> Presupuestos económicos </li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> Trabajos 100% garantizados por escrito </li>
                 </h3>
-                <h3>
+                <h3 [class.fadepr]="fade">
                     <li> Pagos en efectivo, tarjetas de débito o crédito y transferencias bancarias </li>
                 </h3>
             </div>
@@ -77,10 +77,10 @@
     </div>
 </section>
 
-<div class="container mt-5">
+<div class="container mt-5" [class.animate_title]="animate_title">
     <div class="row mb-5">
         <div class="col d-flex justify-content-center">
-            <h1 id="text" class="bgloga"> ALGUNAS DE LAS MARCAS QUE TRABAJAMOS </h1>
+            <h1 id="text" class="bgloga" [class.fade]="fade"> ALGUNAS DE LAS MARCAS QUE TRABAJAMOS </h1>
         </div>
     </div>
 </div>
@@ -145,53 +145,39 @@
 </div> -->
 
 
-<section id="nosotros" class="nosotros">
+<section id="nosotros" class="nosotros ">
     <div class="container ">
         <div class="row">
-            <div class="mb-5 mt-5">
-                <h1 id="text-title" class="text-center display-1 mt-5 mb-5 bgloga"> Nosotros</h1>
+            <div class="mb-5 mt-5" [class.animate_nosotros]="animate_nosotros">
+                <h1 id="text-title" class="text-center display-1 mt-5 mb-5 bgloga " [class.faden]="faden"> Nosotros</h1>
             </div>
-            <!--             <div class="col-sm-6 col-lg-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill text-primary" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
-                    <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
-                </svg>
-                <br>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-half-fill text-primary" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
-                    <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
-                </svg>
-                <br>
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill- text-primary" viewBox="0 0 16 16">
-                    <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
-                </svg>
-            </div> -->
+
             <div class="col-sm-12 col-lg-6">
 
                 <div class="d-flex align-items-center mb-4">
                     <div class="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill text-primary" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill text-primary" [class.animate_nosotropl]="animate_nosotros" [class.fadenpl]="faden" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10a5 5 0 0 0 10 0c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
                             <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
                         </svg>
                     </div>
-                    <div class="flex-grow-1 ms-3">
-                        <h3> Objetivo</h3>
-                        <h5 data-aos="fade-left" class="just">
+                    <div class="flex-grow-1 ms-3" [class.animate_nosotropl]="animate_nosotros">
+                        <h3 [class.fadenpl]="faden"> Objetivo</h3>
+                        <h5 class="just" [class.fadenpl]="faden">
                             Nuestra misión es brindar solución total a sus requerimientos de agua caliente, ambiente y vapor. Por ello contamos con técnicos especializados, que le ofrecen la respuesta que busca,\ para satisfacer sus necesidades y resolver sus dudas.
                         </h5>
                     </div>
                 </div>
-                <div class="d-flex align-items-center mb-4">
+                <div class="d-flex align-items-center mb-4 ">
                     <div class="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-half-fill text-primary" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-half-fill text-primary" [class.animate_nosotropl]="animate_nosotros" [class.fadenpl]="faden" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
                             <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
                         </svg>
                     </div>
-                    <div class="flex-grow-1 ms-3">
-                        <h3> ¿Quiénes somos?</h3>
-                        <h5 class="just">
+                    <div class="flex-grow-1 ms-3" [class.animate_nosotropl]="animate_nosotros">
+                        <h3 [class.fadenpl]="faden"> ¿Quiénes somos?</h3>
+                        <h5 class="just" [class.fadenpl]="faden">
                             Somos una empresa mexicana con más de 20 años posicionados en el mercado... destacándonos en la calidad de nuestros trabajos y en la asesoría adecuada a sus necesidades así como en la Reparación y Mantenimiento (Preventivo-Correctivo) de la amplia gama
                             de Nuestros productos en sus Diversas Clasificaciones.
                         </h5>
@@ -200,13 +186,13 @@
 
                 <div class="d-flex align-items-center mb-4">
                     <div class="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill- text-primary" viewBox="0 0 16 16">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-droplet-fill- text-primary" [class.animate_nosotropl]="animate_nosotros" [class.fadenpl]="faden" viewBox="0 0 16 16">
                             <path d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z"/>
                         </svg>
                     </div>
-                    <div class="flex-grow-1 ms-3">
-                        <h3> ¿Qué hacemos?</h3>
-                        <h5 class="just">
+                    <div class="flex-grow-1 ms-3" [class.animate_nosotropl]="animate_nosotros">
+                        <h3 [class.fadenpl]="faden"> ¿Qué hacemos?</h3>
+                        <h5 class="just" [class.fadenpl]="faden">
                             Nos dedicamos a la reparación, mantenimiento, venta de equipos y refacciones, de calderas, calentadores de paso y de depósito, generadores de vapor, equipos para albercas, calefacciones centrales e hidronicas, calefactores, sistemas de recirculación para
                             agua, hidroneumáticos, fabricación de tanques para almacenamiento de agua caliente, recubrimientos térmicos para tubería y tanques, automatización y conversión de equipos de diésel a gas, instalaciones hidráulicas, etc.
                         </h5>
@@ -238,8 +224,8 @@
                     </div>
                 </ul> -->
             </div>
-            <div class="d-flex justify-content-center col-sm-12 col-lg-6 mb-3">
-                <img src="assets/index/calentadores_reparacion_total.png" alt="reparacion-total">
+            <div class="d-flex justify-content-center col-sm-12 col-lg-6 mb-3" [class.animate_nosotropr]="animate_nosotros">
+                <img [class.fadenpr]="faden" src="assets/index/calentadores_reparacion_total.png" alt="reparacion-total">
             </div>
         </div>
     </div>
