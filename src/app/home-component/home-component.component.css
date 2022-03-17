@@ -73,10 +73,45 @@ button {
     transform: skew(-20deg);
 }
 
+#text-title {
+    font-size: 50px;
+    font-family: Helvetica;
+    transform: skew(-20deg);
+    display: block;
+}
+
 .bglog {
     color: #e30613;
 }
 
 .bgloga {
     color: #1270b7;
+}
+
+.animate_title {
+    animation: fadeInDown;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.fade {
+    opacity: 0;
+    /* transition: 0.7s; */
+    animation: fadeOutUp;
+    animation-duration: 0.7s;
+}
+
+
+/* RESOLUCIONES CELULAR */
+
+@media only screen and (max-width: 600px) {
+    .animate_title {
+        color: #1270b7;
+    }
+    .fade {
+        opacity: 1;
+        animation: bounce;
+        animation-duration: 0.7s;
+    }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
     selector: 'app-header',
@@ -9,5 +9,8 @@ import { Component } from '@angular/core';
 export class HeaderComponet {
     title = 'reparaciones-app';
 
-    
+constructor(){}
+    ngOnInit(){}
+
+
 }

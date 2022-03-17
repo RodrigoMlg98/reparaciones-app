@@ -58,11 +58,17 @@
         .whatsapp-icon {
             margin-top: 13px;
         }
+        
+        .animado {
+            opacity: 0;
+            transition: all 0.5s;
+        }
     </style>
 </head>
 
 
 <body>
+
     <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsapp  d-none d-sm-block" target="_blank"> <i class="mx-auto fa fa-whatsapp whatsapp-icon"></i></a>
     <a href="https://wa.me/525545508452?text=Me%20gustaría%20contratar%20un%20servicio%20de%20reparación" class="whatsappcel  d-sm-none d-flex" target="_blank"> <i class="mx-auto fa fa-whatsapp whatsapp-icon"></i></a>
     <app-root></app-root>
@@ -81,33 +87,18 @@
     </div>
 </div>
 
-
-
-
 </html>
 
 <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.cookie/1.1/jquery.cookie.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/jquery.cookie/1.1/jquery.cookie.js"></script> -->
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://use.fontawesome.com/02f5a599c4.js"></script>
 
-<script>
-    AOS.init({
-        duration: 1200,
-    })
-</script>
-
-<script>
-    /*     $(document).ready(function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    /*     $(document).ready(function() {
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            $('#exampleModal').modal('show');
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }); */
-</script>
 
 <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -120,183 +111,64 @@
             /*   document.getElementById("navbar").style.padding = "20px 10px"; */
             document.getElementById("logo").style.width = "250px";
             document.getElementById("bi-telephone").style.width = "35px";
-            document.getElementById("telefono").style.fontSize = ".5em";
-            document.getElementById("text-navi").style.fontSize = "1em";
-            document.getElementById("text-navs").style.fontSize = "1em";
-            document.getElementById("text-navv").style.fontSize = "1em";
+            /*             document.getElementById("telefono").style.fontSize = ".5em";
+                        document.getElementById("text-navi").style.fontSize = "1em";
+                        document.getElementById("text-navs").style.fontSize = "1em";
+                        document.getElementById("text-navv").style.fontSize = "1em"; */
 
         } else {
             /*  document.getElementById("navbar").style.padding = "35px 5px"; */
             document.getElementById("logo").style.width = "350px";
             document.getElementById("bi-telephone").style.width = "50px";
-            document.getElementById("telefono").style.fontSize = "1em";
-            document.getElementById("text-navi").style.fontSize = "2em";
-            document.getElementById("text-navs").style.fontSize = "2em";
-            document.getElementById("text-navv").style.fontSize = "2em";
+            /*  document.getElementById("telefono").style.fontSize = "1em";
+             document.getElementById("text-navi").style.fontSize = "2em";
+             document.getElementById("text-navs").style.fontSize = "2em";
+             document.getElementById("text-navv").style.fontSize = "2em"; */
 
         }
     }
 </script>
 
 <script>
-    $(document).ready(function() {
-        $(".trabajos ").owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 3000,
-            margin: 4,
-            loop: true,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {
-                    items: 4
-                },
-                600: {
-                    items: 4
-                },
-                1000: {
-                    items: 4
+    /*     $(document).ready(function() {
+                                                                                        $(".trabajos ").owlCarousel({
+                                                                                            autoplay: true,
+                                                                                            autoplayTimeout: 3000,
+                                                                                            margin: 4,
+                                                                                            loop: true,
+                                                                                            autoplayHoverPause: true,
+                                                                                            responsive: {
+                                                                                                0: {
+                                                                                                    items: 4
+                                                                                                },
+                                                                                                600: {
+                                                                                                    items: 4
+                                                                                                },
+                                                                                                1000: {
+                                                                                                    items: 4
+                                                                                                }
+                                                                                            }
+                                                                                        });
+                                                                                    }); */
+
+    /*     $(document).ready(function() {
+            $(".marcas ").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 1000,
+                margin: 30,
+                loop: true,
+                center: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 3
+                    }
                 }
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $(".marcas ").owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 1000,
-            margin: 30,
-            loop: true,
-            center: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 3
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        });
-    });
-</script>
-
-<script>
-    function count() {
-        var counter = {
-            var: 0
-        };
-        TweenMax.to(counter, 3, {
-            var: 100,
-            onUpdate: function() {
-                var number = Math.ceil(counter.var);
-                $('.counter').html(number);
-                if (number === counter.var) {
-                    count.kill();
-                }
-            },
-            onComplete: function() {
-                count();
-            },
-            ease: Circ.easeOut
-        });
-    }
-
-    count();
-</script>
-<script>
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.nav').addClass('sticky')
-        } else {
-            $('.nav').removeClass('sticky')
-        }
-    });
-</script>
-<script>
-    $(document).ready(function() {
-        var slider = $("#slider");
-        var thumb = $("#thumb");
-        var slidesPerPage = 4; //globaly define number of elements per page
-        var syncedSecondary = true;
-        slider.owlCarousel({
-            items: 1,
-            slideSpeed: 2000,
-            nav: false,
-            autoplay: false,
-            dots: false,
-            loop: true,
-            responsiveRefreshRate: 200
-        }).on('changed.owl.carousel', syncPosition);
-        thumb
-            .on('initialized.owl.carousel', function() {
-                thumb.find(".owl-item").eq(0).addClass("current");
-            })
-            .owlCarousel({
-                items: slidesPerPage,
-                dots: false,
-                nav: true,
-                item: 4,
-                smartSpeed: 200,
-                slideSpeed: 500,
-                slideBy: slidesPerPage,
-                navText: ['<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
-                responsiveRefreshRate: 100
-            }).on('changed.owl.carousel', syncPosition2);
-
-        function syncPosition(el) {
-            var count = el.item.count - 1;
-            var current = Math.round(el.item.index - (el.item.count / 2) - .5);
-            if (current < 0) {
-                current = count;
-            }
-            if (current > count) {
-                current = 0;
-            }
-            thumb
-                .find(".owl-item")
-                .removeClass("current")
-                .eq(current)
-                .addClass("current");
-            var onscreen = thumb.find('.owl-item.active').length - 1;
-            var start = thumb.find('.owl-item.active').first().index();
-            var end = thumb.find('.owl-item.active').last().index();
-            if (current > end) {
-                thumb.data('owl.carousel').to(current, 100, true);
-            }
-            if (current < start) {
-                thumb.data('owl.carousel').to(current - onscreen, 100, true);
-            }
-        }
-
-        function syncPosition2(el) {
-            if (syncedSecondary) {
-                var number = el.item.index;
-                slider.data('owl.carousel').to(number, 100, true);
-            }
-        }
-        thumb.on("click", ".owl-item", function(e) {
-            e.preventDefault();
-            var number = $(this).index();
-            slider.data('owl.carousel').to(number, 300, true);
-        });
-
-
-        $(".qtyminus").on("click", function() {
-            var now = $(".qty").val();
-            if ($.isNumeric(now)) {
-                if (parseInt(now) - 1 > 0) {
-                    now--;
-                }
-                $(".qty").val(now);
-            }
-        })
-        $(".qtyplus").on("click", function() {
-            var now = $(".qty").val();
-            if ($.isNumeric(now)) {
-                $(".qty").val(parseInt(now) + 1);
-            }
-        });
-    });
+            });
+        }); */
 </script>
