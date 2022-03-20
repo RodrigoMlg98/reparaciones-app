@@ -28,6 +28,10 @@
      font-family: Helvetica;
      transform: skew(-20deg);
  }
+ /*  .active {
+     border-top: 4px solid rgb(18, 112, 183) !important;
+     border-bottom: 4px solid rgb(18, 112, 183) !important;
+ } */
  
  #text:hover {
      border-top: 4px solid rgb(18, 112, 183);
