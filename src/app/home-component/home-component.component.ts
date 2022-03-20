@@ -28,7 +28,10 @@ export class HomeComponentComponent implements OnInit {
   fadenpl = true;
   fadenpr = true;
 /*   REPARACION */
- 
+  animate_titler = false;
+  fader = true;
+  animate_video = false;
+  fadev = true;
 
   
 
@@ -80,6 +83,22 @@ else{
         this.fadenpl = true;
         this.fadenpr = true;
     }
+    /* REPARACION */
+    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
+      this.animate_titler=true;
+      this.animate_video=true;
+      this.fader=false;
+      this.fadev=false;
+    }
+    else{
+      this.animate_titler=false; 
+      this.animate_video=false;
+      this.fader = true;
+      this.fadev=true;
+
+    }
+
+
   
   }
 }
