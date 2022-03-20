@@ -31,27 +31,59 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Bootstrap 5 Modal Form</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Formulario de servicios por contacto</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+                <form (ngSubmit)="onSubmit()" #servicioForm="ngForm">
                     <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" />
+                        <label class="form-label">¿El calentador enciende?</label>
+                        <div class="container">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.enciende" type="radio" name="enciende" id="inlineRadio1" value="1">
+                                <label class="form-check-label" for="inlineRadio1">Si</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.enciende" type="radio" name="enciende" id="inlineRadio2" value="0">
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" />
+                        <label class="form-label">¿Nota un olor a gas o extraño que emane del calentador?</label>
+                        <div class="container">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.olor" type="radio" name="olor" id="inlineRadio1" value="1">
+                                <label class="form-check-label" for="inlineRadio1">Si</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.olor" type="radio" name="olor" id="inlineRadio2" value="0">
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe" />
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
+
+                    <div class="mb-3">
+                        <label class="form-label">¿Detecta un problema a parte de los antes mencionados?</label>
+                        <div class="container">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.Mproblema" type="radio" name="Mproblema" id="inlineRadio1" value="1">
+                                <label class="form-check-label" for="inlineRadio1">Si</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" [(ngModel)]="model.Mproblema" type="radio" name="Mproblema" id="inlineRadio2" value="0">
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                            <div class="mt-3">
+                                <textarea placeholder="(Opcional)" [(ngModel)]="model.problema" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
                     </div>
-                    <div class="modal-footer d-block">
-                        <p class="float-start">Not yet account <a href="#">Sign Up</a></p>
-                        <button type="submit" class="btn btn-warning float-end">Submit</button>
+
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Contactar</button>
                     </div>
+
                 </form>
             </div>
         </div>

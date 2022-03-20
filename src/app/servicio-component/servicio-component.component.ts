@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-servicio-component',
   templateUrl: './servicio-component.component.html',
@@ -19,8 +20,15 @@ export class ServicioComponentComponent {
 
   
 
-  constructor(private actRoute: ActivatedRoute) {
+  constructor(private actRoute: ActivatedRoute,
+    public enciende: number,
+    public olor: number,
+    public Mproblema: number,
+    public problema?: string) {
     this.servicio = this.actRoute.snapshot.params['id'];
+
+
+    
   }
 
 
