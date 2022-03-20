@@ -27,6 +27,8 @@ export class HomeComponentComponent implements OnInit {
   faden = true;
   fadenpl = true;
   fadenpr = true;
+/*   REPARACION */
+ 
 
   
 
@@ -62,7 +64,7 @@ else{
 
   /* SCROLL DE NOSOTROS */
 
-    if(document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700){
+    if(document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300){
         this.animate_nosotros=true;
         this.animate_nosotropl =true;
         this.animate_nosotropr =true;
@@ -78,6 +80,7 @@ else{
         this.fadenpl = true;
         this.fadenpr = true;
     }
+  
   }
 }
 
