@@ -101,7 +101,7 @@
 <script>
     $(document).ready(function() {
         $('#js-main-slider').pogoSlider({
-            autoplayTimeout: 4000,
+            autoplayTimeout: 5000,
             autoplay: true,
             baseZindex: 1,
             displayProgess: true,
@@ -111,7 +111,7 @@
             onSliderResume: null,
             slideTransition: 'slide',
             slideTransitionDuration: 1000,
-            elementTransitionStart: 500,
+            elementTransitionStart: 100,
             elementTransitionDuration: 1000,
             elementTransitionIn: 'slideUp',
             elementTransitionOut: 'slideDown',
@@ -119,11 +119,11 @@
             buttonPosition: 'CenterHorizontal',
             generateNav: true,
             navPosition: 'Bottom',
-            preserveTargetSize: false,
+            preserveTargetSize: true,
             targetWidth: 1000,
             targetHeight: 400,
             responsive: true,
-            pauseOnHover: true
+            pauseOnHover: false
         }).data('plugin_pogoSlider');
     });
 </script>
@@ -160,25 +160,25 @@
 
 <script>
     /*     $(document).ready(function() {
-                                                                                                                                                                    $(".trabajos ").owlCarousel({
-                                                                                                                                                                        autoplay: true,
-                                                                                                                                                                        autoplayTimeout: 3000,
-                                                                                                                                                                        margin: 4,
-                                                                                                                                                                        loop: true,
-                                                                                                                                                                        autoplayHoverPause: true,
-                                                                                                                                                                        responsive: {
-                                                                                                                                                                            0: {
-                                                                                                                                                                                items: 4
-                                                                                                                                                                            },
-                                                                                                                                                                            600: {
-                                                                                                                                                                                items: 4
-                                                                                                                                                                            },
-                                                                                                                                                                            1000: {
-                                                                                                                                                                                items: 4
-                                                                                                                                                                            }
-                                                                                                                                                                        }
-                                                                                                                                                                    });
-                                                                                                                                                                }); */
+                                                                                                                                                                                                                                                                                $(".trabajos ").owlCarousel({
+                                                                                                                                                                                                                                                                                    autoplay: true,
+                                                                                                                                                                                                                                                                                    autoplayTimeout: 3000,
+                                                                                                                                                                                                                                                                                    margin: 4,
+                                                                                                                                                                                                                                                                                    loop: true,
+                                                                                                                                                                                                                                                                                    autoplayHoverPause: true,
+                                                                                                                                                                                                                                                                                    responsive: {
+                                                                                                                                                                                                                                                                                        0: {
+                                                                                                                                                                                                                                                                                            items: 4
+                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                        600: {
+                                                                                                                                                                                                                                                                                            items: 4
+                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                        1000: {
+                                                                                                                                                                                                                                                                                            items: 4
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                });
+                                                                                                                                                                                                                                                                            }); */
 
     /*     $(document).ready(function() {
             $(".marcas ").owlCarousel({

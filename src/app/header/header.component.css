@@ -13,10 +13,30 @@
      transition: 1s;
  }
  
+ #text-tel {
+     font-size: 35px;
+     font-family: Helvetica;
+     transform: skew(-20deg);
+ }
+ 
+ #text-tel:hover {
+     color: #75eb50;
+ }
+ 
  #text {
      font-size: 35px;
      font-family: Helvetica;
      transform: skew(-20deg);
+ }
+ 
+ #text:hover {
+     border-top: 4px solid rgb(18, 112, 183);
+     border-bottom: 4px solid rgb(18, 112, 183);
+ }
+ 
+ #text:active {
+     border-top: 4px solid rgb(18, 112, 183);
+     border-bottom: 4px solid rgb(18, 112, 183);
  }
  
  #text-navi {
