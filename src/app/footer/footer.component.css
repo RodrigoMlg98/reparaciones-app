@@ -153,7 +153,7 @@ ul {
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #1270b7;
+    background: #e30613;
 }
 
 .footer-widget ul li {
@@ -221,7 +221,7 @@ ul {
 }
 
 .footer-menu li:hover a {
-    color: #ff5e14;
+    color: #e30613;
 }
 
 .footer-menu li a {
