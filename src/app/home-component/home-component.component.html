@@ -216,11 +216,13 @@
     </div>
 </div>
 <div>
-    <section>
-        <div class="ratio" style="--bs-aspect-ratio: 40%;" [class.animate_video]="animate_video">
-            <iframe [class.fadev]="fadev" width="520" height="315" src="https://www.youtube.com/embed/clwh4Y7QldI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="ratio" style="--bs-aspect-ratio: 40%;" [class.animate_video]="animate_video">
+                <iframe [class.fadev]="fadev" src="https://www.youtube.com/embed/clwh4Y7QldI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
-    </section>
+    </div>
     <section id="count">
         <div class="container">
             <div class="row mt-5 md-6">
