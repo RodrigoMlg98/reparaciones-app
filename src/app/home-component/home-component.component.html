@@ -207,18 +207,18 @@
         </div>
     </div>
 </section>
-<div class="container mt-5">
+<div class="container mt-5" [class.animate_titler]="animate_titler">
     <div class="row mb-5">
         <div class="col d-flex justify-content-center">
-            <h1 id="text" class="bgloga mt-5 mb-5">REPARACIÓN Y ARREGLO DE SISTEMA DE GAS E HIDRÁULICO</h1>
+            <h1 id="text" class="bgloga mt-5 mb-5" [class.fadev]="fadev">REPARACIÓN Y ARREGLO DE SISTEMA DE GAS E HIDRÁULICO</h1>
         </div>
         <h4>Reparación y arreglo de sistema de gas e hidráulico a calentadores dúplex Hesa, y cambio de instalación hidráulica a calentadores solares en hotel.</h4>
     </div>
 </div>
 <div>
     <section>
-        <div class="text-center">
-            <iframe width="620" height="415" src="https://www.youtube.com/embed/clwh4Y7QldI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="ratio" style="--bs-aspect-ratio: 40%;" [class.animate_video]="animate_video">
+            <iframe [class.fadev]="fadev" width="520" height="315" src="https://www.youtube.com/embed/clwh4Y7QldI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <section id="count">
