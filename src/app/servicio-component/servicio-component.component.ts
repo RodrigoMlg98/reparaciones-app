@@ -20,11 +20,7 @@ export class ServicioComponentComponent {
 
   
 
-  constructor(private actRoute: ActivatedRoute,
-    public enciende: number,
-    public olor: number,
-    public Mproblema: number,
-    public problema?: string) {
+  constructor(private actRoute: ActivatedRoute,) {
     this.servicio = this.actRoute.snapshot.params['id'];
 
 
