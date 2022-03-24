@@ -17,11 +17,13 @@ export class ServicioComponentComponent {
   servicio: string;
 
   calentador: boolean = false;
+  
 
   
 
   constructor(private actRoute: ActivatedRoute,) {
     this.servicio = this.actRoute.snapshot.params['id'];
+
 
 
     
