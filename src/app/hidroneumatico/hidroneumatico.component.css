@@ -72,6 +72,11 @@
     animation-duration: 2s;
 }
 
+.contenido {
+    animation: fadeInRight;
+    animation-duration: 2s;
+}
+
 
 /* DEMO-SPECIFIC STYLES */
 
