@@ -122,3 +122,7 @@
         border-color: orange
     }
 } */
+
+button:hover {
+    background: #1270b7;
+}

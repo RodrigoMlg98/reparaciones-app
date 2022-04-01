@@ -50,7 +50,7 @@
 }
 
 .button-two span:after {
-    content: '>>';
+    content: '';
     position: absolute;
     opacity: 0;
     top: 0;
@@ -121,3 +121,7 @@
         border-color: orange
     }
 } */
+
+button:hover {
+    background: #1270b7;
+}
