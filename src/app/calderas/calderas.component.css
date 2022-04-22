@@ -134,10 +134,23 @@ button:hover {
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width:1000px) {
     #text {
         font-size: 27px;
         font-family: Helvetica;
         transform: skew(-20deg);
+    }
+}
+
+@media screen and (max-width:800px) {
+    #panel1 {
+        border-radius: 4px;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    #panel2 {
+        border-radius: 4px;
+        padding: 1rem;
+        margin-left: 2rem;
     }
 }
