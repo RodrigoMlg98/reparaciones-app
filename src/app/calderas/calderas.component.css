@@ -125,3 +125,19 @@
 button:hover {
     background: #1270b7;
 }
+
+@media screen and (max-width:800px) {
+    #text {
+        font-size: 30px;
+        font-family: Helvetica;
+        transform: skew(-20deg);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #text {
+        font-size: 27px;
+        font-family: Helvetica;
+        transform: skew(-20deg);
+    }
+}
