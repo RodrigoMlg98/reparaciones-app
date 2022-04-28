@@ -48,55 +48,33 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <div class="mb-3">
-                        <label class="form-label">¿El calentador enciende?</label>
-                        <div class="container">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="enciende" id="inlineRadio1" value="1">
-                                <label class="form-check-label" for="inlineRadio1">Si</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="enciende" id="inlineRadio2" value="0">
-                                <label class="form-check-label" for="inlineRadio2">No</label>
-                            </div>
+                    <div class="mb-3 ">
+                        <label class="form-label ">¿El calentador enciende?</label>
+                        <div class="container ">
+                            <select class="form-select" aria-label="Default select example" id="on" name="on">
+                                <option value="1" selected> Si </option>
+                                <option value="0" >No</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">¿Nota un olor a gas o extraño que emane del calentador?</label>
-                        <div class="container">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="olor" id="inlineRadio1" value="1">
-                                <label class="form-check-label" for="inlineRadio1">Si</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="olor" id="inlineRadio2" value="0">
-                                <label class="form-check-label" for="inlineRadio2">No</label>
-                            </div>
+                    <div class="mb-3 ">
+                        <label class="form-label ">¿Nota un olor a gas o extraño que emane del calentador?</label>
+                        <div class="container ">
+                            <select class="form-select" aria-label="Default select example" id="olor" name="olor">
+                                <option value="1" selected> Si </option>
+                                <option value="0" >No</option>
+                            </select>
                         </div>
                     </div>
 
                     <div class="mb-3">
-                        <label class="form-label">¿Detecta un problema a parte de los antes mencionados?</label>
-                        <div class="container">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="Mproblema" id="inlineRadio1" value="1">
-                                <label class="form-check-label" for="inlineRadio1">Si</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="Mproblema" id="inlineRadio2" value="0">
-                                <label class="form-check-label" for="inlineRadio2">No</label>
-                            </div>
-                            <div class="mt-3">
-                                <textarea placeholder="(Opcional)" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                        </div>
+                        <label for="exampleFormControlTextarea1" class="form-label">Descríbenos tu problema</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
                     </div>
 
                     <div>
-                        <button type="submit" class="btn btn-primary mb-3">Contactar</button>
+                        <a data-bs-dismiss="modal" (click)="clickEvent()" id="contactar " class="btn btn-primary mb-3 ">Contactar</a>
                     </div>
-
-
                 </form>
             </div>
         </div>

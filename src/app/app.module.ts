@@ -1,12 +1,13 @@
-
+import { AppComponent } from './app.component';
 import { HeaderComponet } from './/header/header.componet';
 import { footerComponet } from './footer/footer.component';
-
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+
 
 
 
@@ -21,7 +22,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     HeaderComponet,
     footerComponet
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent],
 })
