@@ -26,12 +26,53 @@
                 <h1 class="just contenido">Los recipientes a presión, como las calderas industriales, pueden ser sensibles a una variedad de problemas de degradación y pérdida de calor si no se les da el mantenimiento adecuado.</h1>
 
                 <div class="pt-5 d-flex justify-content-between">
-                    <button id="panel1" class="button-two text-white"><span><b>SERVICIO </b></span></button>
+                    <button id="panel1" data-bs-toggle="modal" data-bs-target="#modalForm" class="button-two text-white"><span><b>SERVICIO </b></span></button>
 
-                    <button id="panel2" class="button-two text-white"><span> <b>INSTALACIÓN </b></span></button>
+                    <button id="panel2" data-bs-toggle="modal" data-bs-target="#modalForm" class="button-two text-white"><span> <b>INSTALACIÓN </b></span></button>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+<div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Formulario de servicios por contacto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3 ">
+                        <label class="form-label ">¿La caldera no calienta?</label>
+                        <div class="container ">
+                            <select class="form-select" aria-label="Default select example" id="on" name="on">
+                                <option value="1" selected> Si </option>
+                                <option value="0" >No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 ">
+                        <label class="form-label ">¿La caldera hace mas ruido de lo usual?</label>
+                        <div class="container ">
+                            <select class="form-select" aria-label="Default select example" id="olor" name="olor">
+                                <option value="1" selected> Si </option>
+                                <option value="0" >No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descríbenos tu problema</label>
+                        <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+                    </div>
+
+                    <div>
+                        <a data-bs-dismiss="modal" (click)="clickEvent()" id="contactar " class="btn btn-primary mb-3 ">Contactar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
